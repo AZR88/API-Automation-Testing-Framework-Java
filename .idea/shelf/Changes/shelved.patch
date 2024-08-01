@@ -1,0 +1,33 @@
+Index: build.gradle
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/build.gradle b/build.gradle
+new file mode 100644
+--- /dev/null	(date 1722519045121)
++++ b/build.gradle	(date 1722519045121)
+@@ -0,0 +1,22 @@
++plugins {
++    id 'java'
++}
++
++group = 'org.example'
++version = '1.0-SNAPSHOT'
++
++repositories {
++    mavenCentral()
++}
++
++dependencies {
++    testImplementation group: 'io.rest-assured', name: 'rest-assured', version: '5.4.0'
++    testImplementation group: 'org.json', name: 'json', version: '20231013'
++    testImplementation group: 'org.testng', name: 'testng', version: '7.10.2'
++}
++
++test {
++    useTestNG{
++        suites 'src/test/resource/testing.xml'
++    }
++}
+\ No newline at end of file
