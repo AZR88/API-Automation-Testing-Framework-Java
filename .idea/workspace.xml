@@ -4,8 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="e1469b56-3874-43a0-89da-e77df1d52c9e" name="Changes" comment="Update Package">
-      <change afterPath="$PROJECT_DIR$/src/test/resources/Testng.xml" afterDir="false" />
+    <list default="true" id="e1469b56-3874-43a0-89da-e77df1d52c9e" name="Changes" comment="Add xml file">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/apiauto/APITest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/apiauto/APITest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -54,7 +55,9 @@
   <component name="PropertiesComponent">{
   &quot;keyToString&quot;: {
     &quot;Gradle.Automation_Testing.executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.Build Automation_Testing.executor&quot;: &quot;Run&quot;,
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;TestNG.C:/Azriel/Java/automation Testing/Automation_Testing/src/test/resources/Testng.xml.executor&quot;: &quot;Run&quot;,
     &quot;git-widget-placeholder&quot;: &quot;master&quot;,
     &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
     &quot;project.structure.last.edited&quot;: &quot;Modules&quot;,
@@ -62,6 +65,23 @@
     &quot;project.structure.side.proportion&quot;: &quot;0.0&quot;
   }
 }</component>
+  <component name="RunManager">
+    <configuration name="C:/Azriel/Java/automation Testing/Automation_Testing/src/test/resources/Testng.xml" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="Automation_Testing.test" />
+      <option name="SUITE_NAME" value="$PROJECT_DIR$/src/test/resources/Testng.xml" />
+      <option name="TEST_OBJECT" value="SUITE" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="TestNG.C:/Azriel/Java/automation Testing/Automation_Testing/src/test/resources/Testng.xml" />
+      </list>
+    </recent_temporary>
+  </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
@@ -119,7 +139,15 @@
       <option name="project" value="LOCAL" />
       <updated>1722521027034</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="Add xml file">
+      <option name="closed" value="true" />
+      <created>1722521305109</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1722521305109</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
@@ -127,6 +155,7 @@
     <MESSAGE value="gradle update" />
     <MESSAGE value="create Package" />
     <MESSAGE value="Update Package" />
-    <option name="LAST_COMMIT_MESSAGE" value="Update Package" />
+    <MESSAGE value="Add xml file" />
+    <option name="LAST_COMMIT_MESSAGE" value="Add xml file" />
   </component>
 </project>
