@@ -5,12 +5,14 @@ import org.hamcrest.Matchers;
 import org.json.JSONObject;
 import org.testng.annotations.Test;
 
+import java.util.HashMap;
+
 import static io.restassured.RestAssured.given;
 
 public class APITest {
 
     @Test
-    static void getUserTest(){
+    static void getUser(){
 
         RestAssured.baseURI = "https://reqres.in/";
 
@@ -23,7 +25,7 @@ public class APITest {
     }
 
     @Test
-    static void PostUserTest(){
+    static void PostUser(){
         RestAssured.baseURI = "https://reqres.in/";
 
         String name = "ziel";
@@ -44,5 +46,32 @@ public class APITest {
                 .assertThat().body("$", Matchers.hasKey("id"))
                 .assertThat().body("$", Matchers.hasKey("createdAt"));
 
+    }
+
+    @Test
+    static void  PutUser(){
+        RestAssured.baseURI = "https://reqres.in/";
+        int userId = 2;
+        String newName ="updateUser";
+        String newJob = "QA";
+
+        String fname = given().when().get("/api/users/2"+userId).getBody().jsonPath().get("data.name");
+        String ljob = given().when().get("/api/users/2"+userId).getBody().jsonPath().get("data.job");
+        System.out.println("name before ="+fname);
+
+        HashMap<String, Object> bodyMap = new HashMap<>();
+        bodyMap.put("id", userId);
+        bodyMap.put("name", newName);
+        bodyMap.put("job", newJob);
+        JSONObject jsonObject = new JSONObject(bodyMap);
+
+        given().log().all()
+                .header("Content-Type","application/json")
+                .body(jsonObject.toString())
+                .put("/api/users/2"+userId)
+                .then().log().all()
+                .assertThat().statusCode(200)
+                .assertThat().body("name", Matchers.equalTo(newName))
+                .assertThat().body("job", Matchers.equalTo(newJob));
     }
 }
