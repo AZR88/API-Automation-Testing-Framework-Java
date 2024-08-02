@@ -4,7 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="e1469b56-3874-43a0-89da-e77df1d52c9e" name="Changes" comment="add post-Test method">
+    <list default="true" id="e1469b56-3874-43a0-89da-e77df1d52c9e" name="Changes" comment="add method put Test">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/apiauto/APITest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/apiauto/APITest.java" afterDir="false" />
     </list>
@@ -155,7 +155,15 @@
       <option name="project" value="LOCAL" />
       <updated>1722605131293</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="add method put Test">
+      <option name="closed" value="true" />
+      <created>1722610252781</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1722610252781</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
@@ -165,6 +173,7 @@
     <MESSAGE value="Update Package" />
     <MESSAGE value="Add xml file" />
     <MESSAGE value="add post-Test method" />
-    <option name="LAST_COMMIT_MESSAGE" value="add post-Test method" />
+    <MESSAGE value="add method put Test" />
+    <option name="LAST_COMMIT_MESSAGE" value="add method put Test" />
   </component>
 </project>

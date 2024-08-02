@@ -74,4 +74,31 @@ public class APITest {
                 .assertThat().body("name", Matchers.equalTo(newName))
                 .assertThat().body("job", Matchers.equalTo(newJob));
     }
+
+    @Test
+    static void  PatchUser(){
+        RestAssured.baseURI = "https://reqres.in/";
+        int userId = 2;
+        String newName ="updateUser";
+
+
+        String fname = given().when().get("/api/users/2"+userId).getBody().jsonPath().get("data.name");
+        String ljob = given().when().get("/api/users/2"+userId).getBody().jsonPath().get("data.job");
+        System.out.println("name before ="+fname);
+
+        HashMap<String, Object> bodyMap = new HashMap<>();
+        bodyMap.put("id", userId);
+        bodyMap.put("name", newName);
+        bodyMap.put("job", ljob);
+        JSONObject jsonObject = new JSONObject(bodyMap);
+
+        given().log().all()
+                .header("Content-Type","application/json")
+                .body(jsonObject.toString())
+                .put("/api/users/2"+userId)
+                .then().log().all()
+                .assertThat().statusCode(200)
+                .assertThat().body("name", Matchers.equalTo(newName))
+                .assertThat().body("job", Matchers.equalTo(ljob));
+    }
 }
