@@ -12,7 +12,7 @@ import static io.restassured.RestAssured.given;
 public class APITest {
 
     @Test
-    static void getUser(){
+    static void GetUser(){
 
         RestAssured.baseURI = "https://reqres.in/";
 
@@ -79,7 +79,7 @@ public class APITest {
     static void  PatchUser(){
         RestAssured.baseURI = "https://reqres.in/";
         int userId = 2;
-        String newName ="updateUser";
+        String newName ="Agus";
 
 
         String fname = given().when().get("/api/users/2"+userId).getBody().jsonPath().get("data.name");
@@ -101,4 +101,18 @@ public class APITest {
                 .assertThat().body("name", Matchers.equalTo(newName))
                 .assertThat().body("job", Matchers.equalTo(ljob));
     }
+
+    @Test
+    public void DeleteUser(){
+        RestAssured.baseURI = "https://reqres.in/";
+
+        int userToDelete = 2;
+
+        given().log().all()
+                .when().delete("/api/users/2"+userToDelete)
+                .then()
+                .log().all()
+                .assertThat().statusCode(204);
+    }
+
 }
