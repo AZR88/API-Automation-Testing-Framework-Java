@@ -4,9 +4,12 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="e1469b56-3874-43a0-89da-e77df1d52c9e" name="Changes" comment="add method patch Test">
+    <list default="true" id="e1469b56-3874-43a0-89da-e77df1d52c9e" name="Changes" comment="add delete test method">
+      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/POST_TEST.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/apiauto/APITest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/apiauto/APITest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/resources/Testng.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/Testng.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -52,20 +55,54 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;Gradle.Automation_Testing.executor&quot;: &quot;Run&quot;,
-    &quot;Gradle.Build Automation_Testing.executor&quot;: &quot;Run&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;TestNG.C:/Azriel/Java/automation Testing/Automation_Testing/src/test/resources/Testng.xml.executor&quot;: &quot;Run&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
-    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
-    &quot;project.structure.last.edited&quot;: &quot;Modules&quot;,
-    &quot;project.structure.proportion&quot;: &quot;0.0&quot;,
-    &quot;project.structure.side.proportion&quot;: &quot;0.0&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "Gradle.Automation_Testing [:POST_TEST.main()].executor": "Run",
+    "Gradle.Automation_Testing.executor": "Run",
+    "Gradle.Build Automation_Testing.executor": "Run",
+    "Gradle.Post_test.main.executor": "Run",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "TestNG.C:/Azriel/Java/automation Testing/Automation_Testing/src/test/resources/Testng.xml.executor": "Run",
+    "git-widget-placeholder": "master",
+    "kotlin-language-version-configured": "true",
+    "project.structure.last.edited": "Modules",
+    "project.structure.proportion": "0.0",
+    "project.structure.side.proportion": "0.0"
   }
-}</component>
-  <component name="RunManager">
+}]]></component>
+  <component name="RunManager" selected="TestNG.C:/Azriel/Java/automation Testing/Automation_Testing/src/test/resources/Testng.xml">
+    <configuration name="POST_TEST" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="POST_TEST" />
+      <module name="Automation_Testing.test" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Post_test.main" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" value="" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value=":test" />
+            <option value="--tests" />
+            <option value="&quot;apiauto.Post_test.main&quot;" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <ExternalSystemDebugServerProcess>false</ExternalSystemDebugServerProcess>
+      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
+      <DebugAllEnabled>false</DebugAllEnabled>
+      <RunAsTest>true</RunAsTest>
+      <method v="2" />
+    </configuration>
     <configuration name="C:/Azriel/Java/automation Testing/Automation_Testing/src/test/resources/Testng.xml" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="Automation_Testing.test" />
       <option name="SUITE_NAME" value="$PROJECT_DIR$/src/test/resources/Testng.xml" />
@@ -79,6 +116,8 @@
     <recent_temporary>
       <list>
         <item itemvalue="TestNG.C:/Azriel/Java/automation Testing/Automation_Testing/src/test/resources/Testng.xml" />
+        <item itemvalue="Application.POST_TEST" />
+        <item itemvalue="Gradle.Post_test.main" />
       </list>
     </recent_temporary>
   </component>
@@ -171,7 +210,15 @@
       <option name="project" value="LOCAL" />
       <updated>1722612251061</updated>
     </task>
-    <option name="localTasksCounter" value="11" />
+    <task id="LOCAL-00011" summary="add delete test method">
+      <option name="closed" value="true" />
+      <created>1722614276350</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1722614276350</updated>
+    </task>
+    <option name="localTasksCounter" value="12" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
@@ -183,6 +230,7 @@
     <MESSAGE value="add post-Test method" />
     <MESSAGE value="add method put Test" />
     <MESSAGE value="add method patch Test" />
-    <option name="LAST_COMMIT_MESSAGE" value="add method patch Test" />
+    <MESSAGE value="add delete test method" />
+    <option name="LAST_COMMIT_MESSAGE" value="add delete test method" />
   </component>
 </project>

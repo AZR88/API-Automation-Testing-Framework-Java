@@ -25,28 +25,36 @@ public class APITest {
     }
 
     @Test
-    static void PostUser(){
+    public void PostUser(String name, String job, boolean shouldPass) {
         RestAssured.baseURI = "https://reqres.in/";
 
-        String name = "ziel";
-        String job = "student";
         JSONObject jsonObject = new JSONObject();
-        jsonObject.put("name",name);
-        jsonObject.put("job",job);
+        jsonObject.put("name", name);
+        jsonObject.put("job", job);
 
-        given().log().all()
-                .header("Content-Type","application/json")
-                .header("Accept","application/json")
-                .body(jsonObject.toString())
-                .post("/api/users")
-                .then()
-                .assertThat().statusCode(201)
-                .assertThat().body("name", Matchers.equalTo(name))
-                .assertThat().body("job", Matchers.equalTo(job))
-                .assertThat().body("$", Matchers.hasKey("id"))
-                .assertThat().body("$", Matchers.hasKey("createdAt"));
-
+        if (shouldPass) {
+            given().log().all()
+                    .header("Content-Type", "application/json")
+                    .header("Accept", "application/json")
+                    .body(jsonObject.toString())
+                    .post("/api/users")
+                    .then()
+                    .assertThat().statusCode(201)
+                    .assertThat().body("name", Matchers.equalTo(name))
+                    .assertThat().body("job", Matchers.equalTo(job))
+                    .assertThat().body("$", Matchers.hasKey("id"))
+                    .assertThat().body("$", Matchers.hasKey("createdAt"));
+        } else {
+            given().log().all()
+                    .header("Content-Type", "application/json")
+                    .header("Accept", "application/json")
+                    .body(jsonObject.toString())
+                    .post("/api/users")
+                    .then()
+                    .assertThat().statusCode(400); // Status code untuk negative test
+        }
     }
+
 
     @Test
     static void  PutUser(){
