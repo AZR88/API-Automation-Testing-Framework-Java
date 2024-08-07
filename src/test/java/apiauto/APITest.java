@@ -93,30 +93,40 @@ public class APITest {
     }
 
     @Test
-    public static void  PatchUser(){
+    public static void  PatchUser(Integer ID, String name, String job, boolean shouldPass){
         RestAssured.baseURI = "https://reqres.in/";
-        int userId = 2;
-        String newName ="Agus";
+
+        JSONObject jsonObject = new JSONObject();
+        jsonObject.put("userID", ID);
+        jsonObject.put("name", name);
+        jsonObject.put("job", job);
 
 
-        String fname = given().when().get("/api/users/2"+userId).getBody().jsonPath().get("data.email");
-        String ljob = given().when().get("/api/users/2"+userId).getBody().jsonPath().get("data.job");
-        System.out.println("name before ="+ fname);
+        String fname = given().when().get("api/users/2"+ID).getBody().jsonPath().get("data.name");
+        String ljob = given().when().get("api/users/2"+ID).getBody().jsonPath().get("data.job");
+        System.out.println("name before ="+fname);
 
-        HashMap<String, Object> bodyMap = new HashMap<>();
-        bodyMap.put("id", userId);
-        bodyMap.put("name", newName);
-        bodyMap.put("job", ljob);
-        JSONObject jsonObject = new JSONObject(bodyMap);
 
-        given().log().all()
-                .header("Content-Type","application/json")
-                .body(jsonObject.toString())
-                .put("/api/users/2"+userId)
-                .then().log().all()
-                .assertThat().statusCode(200)
-                .assertThat().body("name", Matchers.equalTo(newName))
-                .assertThat().body("job", Matchers.equalTo(ljob));
+
+        if (shouldPass){
+            given().log().all()
+                    .header("Content-Type","application/json")
+                    .body(jsonObject.toString())
+                    .put("api/users/2"+ID)
+                    .then().log().all()
+                    .assertThat().statusCode(200)
+                    .assertThat().body("name", Matchers.equalTo(name))
+                    .assertThat().body("job", Matchers.equalTo(job));}
+
+        else {
+            given().log().all()
+                    .header("Content-Type", "application/json")
+                    .header("Accept", "application/json")
+                    .body(jsonObject.toString())
+                    .post("/api/users")
+                    .then()
+                    .assertThat().statusCode(400); // Status code untuk negative test}
+        }
     }
 
     @Test

@@ -2,7 +2,8 @@
 <suite name="API automation suite">
     <test name="API Test">
         <classes>
-            <class name="apiauto.APITest"/>
+            <class name="POST_TEST"/>
+            <class name="PUT_TEST"></class>
         </classes>
     </test> <!-- Test -->
 </suite> <!-- Suite -->

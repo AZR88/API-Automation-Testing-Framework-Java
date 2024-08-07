@@ -4,9 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="e1469b56-3874-43a0-89da-e77df1d52c9e" name="Changes" comment="ADD POST TEST DATA">
-      <change afterPath="$PROJECT_DIR$/src/test/java/PUT_TEST.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    <list default="true" id="e1469b56-3874-43a0-89da-e77df1d52c9e" name="Changes" comment="Create PUT TEST DATA">
       <change beforePath="$PROJECT_DIR$/src/test/java/apiauto/APITest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/apiauto/APITest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/resources/Testng.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/Testng.xml" afterDir="false" />
     </list>
@@ -29,7 +27,6 @@
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
-    <option name="UPDATE_TYPE" value="REBASE" />
   </component>
   <component name="GitHubPullRequestSearchHistory">{
   &quot;lastFilter&quot;: {
@@ -267,7 +264,23 @@
       <option name="project" value="LOCAL" />
       <updated>1722749359206</updated>
     </task>
-    <option name="localTasksCounter" value="15" />
+    <task id="LOCAL-00015" summary="update PUT AUTOMATION">
+      <option name="closed" value="true" />
+      <created>1723050440021</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1723050440021</updated>
+    </task>
+    <task id="LOCAL-00016" summary="Create PUT TEST DATA">
+      <option name="closed" value="true" />
+      <created>1723050478031</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1723050478031</updated>
+    </task>
+    <option name="localTasksCounter" value="17" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
@@ -282,7 +295,9 @@
     <MESSAGE value="add delete test method" />
     <MESSAGE value="Edit method POST" />
     <MESSAGE value="ADD POST TEST DATA" />
-    <option name="LAST_COMMIT_MESSAGE" value="ADD POST TEST DATA" />
+    <MESSAGE value="update PUT AUTOMATION" />
+    <MESSAGE value="Create PUT TEST DATA" />
+    <option name="LAST_COMMIT_MESSAGE" value="Create PUT TEST DATA" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/Automation_Testing$APITest_PutUser.ic" NAME="APITest.PutUser Coverage Results" MODIFIED="1723047734517" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="true" />
