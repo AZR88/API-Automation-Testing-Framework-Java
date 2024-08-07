@@ -4,9 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="e1469b56-3874-43a0-89da-e77df1d52c9e" name="Changes" comment="add delete test method">
-      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/POST_TEST.java" afterDir="false" />
+    <list default="true" id="e1469b56-3874-43a0-89da-e77df1d52c9e" name="Changes" comment="ADD POST TEST DATA">
+      <change afterPath="$PROJECT_DIR$/src/test/java/PUT_TEST.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/apiauto/APITest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/apiauto/APITest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/resources/Testng.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/Testng.xml" afterDir="false" />
@@ -57,6 +56,7 @@
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
+    "Gradle.APITest.PutUser.executor": "Run",
     "Gradle.Automation_Testing [:POST_TEST.main()].executor": "Run",
     "Gradle.Automation_Testing.executor": "Run",
     "Gradle.Build Automation_Testing.executor": "Run",
@@ -78,6 +78,30 @@
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
+    </configuration>
+    <configuration name="APITest.PutUser" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" value="" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value=":test" />
+            <option value="--tests" />
+            <option value="&quot;apiauto.APITest.PutUser&quot;" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <ExternalSystemDebugServerProcess>false</ExternalSystemDebugServerProcess>
+      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
+      <DebugAllEnabled>false</DebugAllEnabled>
+      <RunAsTest>true</RunAsTest>
+      <method v="2" />
     </configuration>
     <configuration name="Post_test.main" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
@@ -116,6 +140,7 @@
     <recent_temporary>
       <list>
         <item itemvalue="TestNG.C:/Azriel/Java/automation Testing/Automation_Testing/src/test/resources/Testng.xml" />
+        <item itemvalue="Gradle.APITest.PutUser" />
         <item itemvalue="Application.POST_TEST" />
         <item itemvalue="Gradle.Post_test.main" />
       </list>
@@ -218,7 +243,31 @@
       <option name="project" value="LOCAL" />
       <updated>1722614276350</updated>
     </task>
-    <option name="localTasksCounter" value="12" />
+    <task id="LOCAL-00012" summary="Edit method POST">
+      <option name="closed" value="true" />
+      <created>1722749286265</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1722749286265</updated>
+    </task>
+    <task id="LOCAL-00013" summary="ADD POST TEST DATA">
+      <option name="closed" value="true" />
+      <created>1722749309485</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1722749309485</updated>
+    </task>
+    <task id="LOCAL-00014" summary="ADD POST TEST DATA">
+      <option name="closed" value="true" />
+      <created>1722749359206</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1722749359206</updated>
+    </task>
+    <option name="localTasksCounter" value="15" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
@@ -231,6 +280,11 @@
     <MESSAGE value="add method put Test" />
     <MESSAGE value="add method patch Test" />
     <MESSAGE value="add delete test method" />
-    <option name="LAST_COMMIT_MESSAGE" value="add delete test method" />
+    <MESSAGE value="Edit method POST" />
+    <MESSAGE value="ADD POST TEST DATA" />
+    <option name="LAST_COMMIT_MESSAGE" value="ADD POST TEST DATA" />
+  </component>
+  <component name="com.intellij.coverage.CoverageDataManagerImpl">
+    <SUITE FILE_PATH="coverage/Automation_Testing$APITest_PutUser.ic" NAME="APITest.PutUser Coverage Results" MODIFIED="1723047734517" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="true" />
   </component>
 </project>
