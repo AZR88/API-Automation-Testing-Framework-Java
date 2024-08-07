@@ -4,8 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="e1469b56-3874-43a0-89da-e77df1d52c9e" name="Changes" comment="FIX PATCH AUTOMATION">
-      <change afterPath="$PROJECT_DIR$/src/test/java/PATCH_TEST.java" afterDir="false" />
+    <list default="true" id="e1469b56-3874-43a0-89da-e77df1d52c9e" name="Changes" comment="ADD Patch Test DAta">
+      <change beforePath="$PROJECT_DIR$/src/test/resources/Testng.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/Testng.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -287,7 +287,15 @@
       <option name="project" value="LOCAL" />
       <updated>1723051064372</updated>
     </task>
-    <option name="localTasksCounter" value="18" />
+    <task id="LOCAL-00018" summary="ADD Patch Test DAta">
+      <option name="closed" value="true" />
+      <created>1723051173651</created>
+      <option name="number" value="00018" />
+      <option name="presentableId" value="LOCAL-00018" />
+      <option name="project" value="LOCAL" />
+      <updated>1723051173651</updated>
+    </task>
+    <option name="localTasksCounter" value="19" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
@@ -305,7 +313,8 @@
     <MESSAGE value="update PUT AUTOMATION" />
     <MESSAGE value="Create PUT TEST DATA" />
     <MESSAGE value="FIX PATCH AUTOMATION" />
-    <option name="LAST_COMMIT_MESSAGE" value="FIX PATCH AUTOMATION" />
+    <MESSAGE value="ADD Patch Test DAta" />
+    <option name="LAST_COMMIT_MESSAGE" value="ADD Patch Test DAta" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/Automation_Testing$APITest_PutUser.ic" NAME="APITest.PutUser Coverage Results" MODIFIED="1723047734517" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="true" />
