@@ -4,8 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="e1469b56-3874-43a0-89da-e77df1d52c9e" name="Changes" comment="ADD Patch Test DAta">
-      <change beforePath="$PROJECT_DIR$/src/test/resources/Testng.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/Testng.xml" afterDir="false" />
+    <list default="true" id="e1469b56-3874-43a0-89da-e77df1d52c9e" name="Changes" comment="FIX XML file for patch update">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/build.gradle" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -50,24 +51,25 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "Gradle.APITest.PutUser.executor": "Run",
-    "Gradle.Automation_Testing [:POST_TEST.main()].executor": "Run",
-    "Gradle.Automation_Testing.executor": "Run",
-    "Gradle.Build Automation_Testing.executor": "Run",
-    "Gradle.Post_test.main.executor": "Run",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "TestNG.C:/Azriel/Java/automation Testing/Automation_Testing/src/test/resources/Testng.xml.executor": "Run",
-    "git-widget-placeholder": "master",
-    "kotlin-language-version-configured": "true",
-    "project.structure.last.edited": "Modules",
-    "project.structure.proportion": "0.0",
-    "project.structure.side.proportion": "0.0"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;Gradle.APITest.PutUser.executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.Automation_Testing [:POST_TEST.main()].executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.Automation_Testing [test].executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.Automation_Testing.executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.Build Automation_Testing.executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.Post_test.main.executor&quot;: &quot;Run&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;TestNG.C:/Azriel/Java/automation Testing/Automation_Testing/src/test/resources/Testng.xml.executor&quot;: &quot;Run&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
+    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Modules&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.0&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.0&quot;
   }
-}]]></component>
-  <component name="RunManager" selected="TestNG.C:/Azriel/Java/automation Testing/Automation_Testing/src/test/resources/Testng.xml">
+}</component>
+  <component name="RunManager" selected="Gradle.Automation_Testing [test]">
     <configuration name="POST_TEST" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="POST_TEST" />
       <module name="Automation_Testing.test" />
@@ -97,6 +99,28 @@
       <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
       <DebugAllEnabled>false</DebugAllEnabled>
       <RunAsTest>true</RunAsTest>
+      <method v="2" />
+    </configuration>
+    <configuration name="Automation_Testing [test]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value="test" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <ExternalSystemDebugServerProcess>true</ExternalSystemDebugServerProcess>
+      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
+      <DebugAllEnabled>false</DebugAllEnabled>
+      <RunAsTest>false</RunAsTest>
       <method v="2" />
     </configuration>
     <configuration name="Post_test.main" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
@@ -135,6 +159,7 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Gradle.Automation_Testing [test]" />
         <item itemvalue="TestNG.C:/Azriel/Java/automation Testing/Automation_Testing/src/test/resources/Testng.xml" />
         <item itemvalue="Gradle.APITest.PutUser" />
         <item itemvalue="Application.POST_TEST" />
@@ -295,7 +320,15 @@
       <option name="project" value="LOCAL" />
       <updated>1723051173651</updated>
     </task>
-    <option name="localTasksCounter" value="19" />
+    <task id="LOCAL-00019" summary="FIX XML file for patch update">
+      <option name="closed" value="true" />
+      <created>1723051259748</created>
+      <option name="number" value="00019" />
+      <option name="presentableId" value="LOCAL-00019" />
+      <option name="project" value="LOCAL" />
+      <updated>1723051259748</updated>
+    </task>
+    <option name="localTasksCounter" value="20" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
@@ -314,7 +347,8 @@
     <MESSAGE value="Create PUT TEST DATA" />
     <MESSAGE value="FIX PATCH AUTOMATION" />
     <MESSAGE value="ADD Patch Test DAta" />
-    <option name="LAST_COMMIT_MESSAGE" value="ADD Patch Test DAta" />
+    <MESSAGE value="FIX XML file for patch update" />
+    <option name="LAST_COMMIT_MESSAGE" value="FIX XML file for patch update" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/Automation_Testing$APITest_PutUser.ic" NAME="APITest.PutUser Coverage Results" MODIFIED="1723047734517" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="true" />
