@@ -12,17 +12,28 @@ import static io.restassured.RestAssured.given;
 public class APITest {
 
     @Test
-    static void GetUser(){
+    public static void GetUser(Integer ID, boolean shouldPass) {
 
         RestAssured.baseURI = "https://reqres.in/";
 
-        given().when().get("api/users?page=2")
-                .then()
-                .log().all()
-                .assertThat().statusCode(200)
-                .assertThat().body("page", Matchers.equalTo(2))
-                .assertThat().body("data.id", Matchers.hasSize(6));
+        if (shouldPass) {
+            given()
+                    .when()
+                    .get("api/users?page=2" + ID)
+                    .then()
+                    .log().all()
+                    .assertThat().statusCode(200)
+                    .assertThat().body("data.id", Matchers.equalTo(ID));
+        } else {
+            given()
+                    .when()
+                    .get("api/users/" + ID)
+                    .then()
+                    .log().all()
+                    .assertThat().statusCode(404); // ID yang tidak ditemukan biasanya akan memberikan status code 404
+        }
     }
+
 
     @Test
     public void PostUser(String name, String job, boolean shouldPass) {

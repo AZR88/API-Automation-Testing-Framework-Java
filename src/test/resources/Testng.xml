@@ -5,6 +5,7 @@
             <class name="POST_TEST"/>
             <class name="PUT_TEST"></class>
             <class name="PATCH_TEST"></class>
+            <class name="GET_TEST"></class>
         </classes>
     </test> <!-- Test -->
 </suite> <!-- Suite -->
