@@ -7,9 +7,9 @@ public class GET_TEST {
     @DataProvider(name = "userData")
     public Object[][] createUserData() {
         return new Object[][] {
-                {7, true},
-                {23, false},
-                {"", false},
+                {7, true},  // Positive case
+                {23, false}, // Negative case: false id
+                {"", false}, // Negative case: empty ID
         };
     }
 

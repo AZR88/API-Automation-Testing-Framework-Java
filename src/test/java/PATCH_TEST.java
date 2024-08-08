@@ -17,7 +17,7 @@ public class PATCH_TEST {
     }
 
     @Test(dataProvider = "userData")
-    public void testPutUser(Integer ID,String name, String job, boolean shouldPass) {
+    public void testPatchUser(Integer ID,String name, String job, boolean shouldPass) {
         APITest test = new APITest();
         test.PatchUser(ID,name, job, shouldPass);
     }
